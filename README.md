@@ -58,45 +58,78 @@ end
 Output: 
 0.6
 0.8
+
 The Vector Library is a Lua library that provides various functions for manipulating and performing operations on vectors. A vector is a mathematical object that represents a quantity with both magnitude and direction. In computer science, vectors are commonly used to represent data that has multiple dimensions.
 
 Here's a full breakdown of the functions provided by the Vector Library:
+
 Vector.check_boolean(boolean_string, vector)
+
 This function takes in a boolean string and a vector table, and checks if the boolean is true for the given vector. If the boolean is false, an error message is returned. If the boolean is true and the vector has a value, the vector is returned. If the boolean is true and the vector is nil, an error message is returned.
+
 Vector.create_vector(vector_values)
+
 This function takes in a table of values and creates a vector from those values. The resulting vector is returned as a table.
+
 Vector.get_size(vector)
+
 This function takes in a vector table and returns the number of elements in the vector.
+
 Vector.save_vector(vector)
+
 This function takes in a vector table and saves it to a file named "Vector_Var.txt". If the file does not exist, it will be created. The vector is appended to the end of the file as a table.
+
 Vector.add_vectors()
+
 This function reads all the vectors stored in "Vector_Var.txt" and returns a new vector that is the sum of all the vectors.
+
 Vector.sub_vectors()
+
 This function reads all the vectors stored in "Vector_Var.txt" and returns a new vector that is the difference of all the vectors.
+
 Vector.scaling_vectors(scaling_factor)
+
 This function reads a vector from "Vector_Var.txt" and scales it by a given factor. The resulting vector is returned as a table.
+
 Vector.rotate_vector(rotation_angle)
+
 This function reads a vector from "Vector_Var.txt" and rotates it by a given angle. The resulting vector is returned as a table.
+
 Vector.norm_vectors()
+
 This function reads a vector from "Vector_Var.txt" and normalizes it. The resulting vector is returned as a table.
+
 Vector.project_vectors(target_vector)
+
 This function reads a vector from "Vector_Var.txt" and projects it onto a target vector. The resulting projected vector is returned as a table.
+
 Vector.dimreduct_vectors(target_dimension)
+
 This function reads a vector from "Vector_Var.txt" and reduces its dimensionality to a given dimension. The resulting vector is returned as a table.
+
 Vector.forwardprop_vectors(input_vector, weight_matrix, bias_vector)
+
 This function performs forward propagation on an input vector using a given weight matrix and bias vector. The resulting output vector is returned as a table.
+
 Vector.activation_func(vector)
+
 This function applies a ReLU activation function to a given vector. The resulting vector is returned as a table.
+
 Vector.backpropagate(output_error, weight_matrix, input_vector)
+
 This function performs backpropagation on a given output error, weight matrix, and input vector. The resulting gradients are returned as a table.
+
 Vector.create_neural_network(num_inputs, num_hidden_layers, hidden_layer_size, num_outputs)
+
 This function creates a neural network with a specified number of inputs, hidden layers, hidden layer size, and outputs. The resulting neural network is returned as a table.
+
 Vector.train_neural_network(neural_network, input_data, output_data, learning_rate, num_epochs)
+
 This function trains a neural network using a specified input dataset, output dataset, learning rate, and number of epochs. The resulting trained neural network is returned as a table.
+
 Vector.evaluate_neural_network(neural_network, input_data, output_data)
+
 This function evaluates the performance of a trained neural network on a specified input dataset and output dataset. The resulting accuracy score is returned as a number.
-
-
 
 The Vector Library is a Lua library for managing integer vectors. It provides a set of functions for creating, manipulating, and saving vectors as tables. The library can be used to perform common vector operations such as addition, subtraction, scaling, rotation, normalization, projection, and dimensionality reduction. The library is designed to be flexible and easy to use, with clear documentation and examples provided for each function. It can be used for a wide range of applications, such as machine learning, data analysis, and graphics programming.
  
